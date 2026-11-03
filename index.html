@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Memoryは、スクショやメモ、予定をひとつにまとめて管理できるiPhoneアプリです。">
+  <title>Memory | 撮ったら、忘れていい。</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #26243a;
+      --muted: #74718a;
+      --accent: #7768d8;
+      --background: #f9f8fd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont,
+        "Hiragino Kaku Gothic ProN", sans-serif;
+      line-height: 1.8;
+    }
+    header, main, footer {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    nav a, footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 16px;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 16px 90px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(32px, 7vw, 56px);
+      line-height: 1.35;
+      letter-spacing: -0.04em;
+      margin: 20px 0;
+    }
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+    }
+    .section-title {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 80px;
+    }
+    .feature {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(40, 30, 90, .04);
+    }
+    .feature h3 { color: var(--accent); }
+    .feature p { color: var(--muted); }
+    .closing {
+      text-align: center;
+      padding: 40px 0 90px;
+    }
+    footer {
+      border-top: 1px solid #e7e4f0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    footer a { margin: 0 8px; }
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 10px; }
+      .hero { padding: 65px 8px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Memory</div>
+    <nav>
+      <a href="privacy.html">プライバシー</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Memory for iPhone</p>
+      <h1>撮ったら、忘れていい。</h1>
+      <p class="lead">
+        あとで見ようと思ったスクショ。<br>
+        忘れないように残したメモ。<br>
+        大切な予定。<br><br>
+        その全部を、ひとつの場所へ。
+      </p>
+    </section>
+
+    <h2 class="section-title">Memoryでできること</h2>
+
+    <section class="features">
+      <div class="feature">
+        <h3>スクショを保存</h3>
+        <p>
+          気になった画像を保存。
+          文字も読み取るので、
+          あとから検索できます。
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>予定を忘れない</h3>
+        <p>
+          文章から日付や時刻の候補を見つけ、
+          予定に登録。
+          通知で思い出せます。
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>メモもひとつに</h3>
+        <p>
+          ふと思いついたことも、
+          忘れたくない情報も、
+          手軽に残せます。
+        </p>
+      </div>
+    </section>
+
+    <section class="closing">
+      <h2>覚えておくことを、少し減らそう。</h2>
+      <p>
+        気になったら保存する。<br>
+        必要になったら探す。<br>
+        予定が近づいたら思い出す。
+      </p>
+      <p><strong>Memory — 撮ったら、忘れていい。</strong></p>
+      <p>iPhoneアプリ公開準備中</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="support.html">お問い合わせ</a>
+    </p>
+    <p>© 2026 Memory運営事務局</p>
+  </footer>
+</body>
+</html>
